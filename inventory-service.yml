@@ -1,18 +1,13 @@
-spring:
-  application:
-    name: inventory-service   # good to keep it, though not strictly required
+# inventory-service.yml  (Clean version - push this)
 
 server:
-  servlet:
-    context-path: /api/v1
-  port: 9011               # usually better to let it be random or set via profile
+  port: 9011
 
-# Database configuration
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/inventoryDB
     username: akshityadav
-    password: ""              # better to use environment variable or encrypted in real prod
+    password: ""                  # Change this to your actual password if needed
 
   jpa:
     hibernate:
@@ -25,6 +20,6 @@ spring:
   sql:
     init:
       mode: always
-      data-locations: classpath:data.sql
+      # data-locations: classpath:data.sql   # uncomment only if you have data.sql
 
-# Add any other common properties here (Eureka is usually kept local or also moved)
+# You can add more properties here (e.g. logging, etc.)
