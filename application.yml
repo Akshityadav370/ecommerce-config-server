@@ -1,0 +1,10 @@
+# Put properties that are common to ALL microservices here
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+# logging level for all, etc.
+logging:
+  level:
+    root: INFO
