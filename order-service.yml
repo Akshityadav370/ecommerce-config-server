@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: order-service
+
+server:
+  servlet:
+    context-path: /api/v1
+  port: 9012
+
+# DB configuration
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orderServiceDB
+    username: akshityadav
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
