@@ -5,7 +5,7 @@ spring:
 server:
   servlet:
     context-path: /api/v1
-  # port: 9011               # usually better to let it be random or set via profile
+  port: 9011               # usually better to let it be random or set via profile
 
 # Database configuration
 spring:
