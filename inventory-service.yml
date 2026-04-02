@@ -22,6 +22,7 @@ spring:
   sql:
     init:
       mode: always
+      continue-on-error: true
       # data-locations: classpath:data.sql   # uncomment only if you have data.sql
 
 # You can add more properties here (e.g. logging, etc.)
