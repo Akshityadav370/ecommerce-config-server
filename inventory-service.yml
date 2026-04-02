@@ -1,6 +1,8 @@
 # inventory-service.yml  (Clean version - push this)
 
 server:
+  servlet:
+    context-path: /api/v1
   port: 9011
 
 spring:
