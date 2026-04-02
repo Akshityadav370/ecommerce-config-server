@@ -1,4 +1,8 @@
 # Put properties that are common to ALL microservices here
+spring:
+  config:
+    import: optional:configserver:http://localhost:8888
+    
 eureka:
   client:
     service-url:
