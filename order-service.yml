@@ -1,9 +1,10 @@
+# order-service.yml
+
 server:
   servlet:
     context-path: /api/v1
   port: 9012
 
-# DB configuration
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/orderServiceDB
