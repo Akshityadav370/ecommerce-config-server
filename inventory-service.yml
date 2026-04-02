@@ -7,7 +7,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/inventoryDB
     username: akshityadav
-    password: ""                  # Change this to your actual password if needed
+    password: root1234              # Change this to your actual password if needed
 
   jpa:
     hibernate:
