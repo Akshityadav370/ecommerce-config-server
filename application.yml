@@ -1,14 +1,10 @@
-# Put properties that are common to ALL microservices here
-spring:
-  config:
-    import: optional:configserver:http://localhost:8888
-    
+# application.yml  (common to all services)
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
-# logging level for all, etc.
 logging:
   level:
     root: INFO
