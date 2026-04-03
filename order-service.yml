@@ -1,5 +1,8 @@
 # order-service.yml
 
+my: 
+  variable: place-order
+
 server:
   servlet:
     context-path: /api/v1
